@@ -9,18 +9,9 @@ public class RestEndpoint {
 	public static void main(String[] args) throws Exception {
 		// TODO Auto-generated method stub
 		ServletHandler servletHandler = new ServletHandler();
-		
-		
 		servletHandler.addServletWithMapping(FacultiesServlet.class, "/jyuDirectory/Faculties"); 
 		
-		
-//		servletHandler.addServletWithMapping(AddFacultyServlet.class, "/jyuDirectory/Faculties/add"); 
-//		
-//		servletHandler.addServletWithMapping(DeleteFacultyServlet.class, "/jyuDirectory/Faculties/delete"); 
-//		servletHandler.addServletWithMapping(EditFacultyServlet.class, "/jyuDirectory/Faculties/edit"); 
-		
 		//Create a new Server, add the handler to it and start
-        
 		// Uncomment for local server deployment
 		 Server server = new Server(1234);	        
 		server.setHandler(servletHandler);
